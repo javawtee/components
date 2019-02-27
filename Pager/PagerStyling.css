@@ -1,0 +1,75 @@
+.Paging {
+    width: 100%;
+}
+
+.items {
+    width: 100%;
+}
+
+.items ul {
+    padding: 10px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.pager {
+    display: flex;
+    height: 50px;
+    padding: 0 40%;
+}
+
+.pageNavigation{
+    width: 80%;
+    display: contents;
+    padding: 5px;
+}
+
+.pageNavigation *  {
+    width: 30%;
+    height: 35px;
+    margin-top: 8%;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+#currentPage {
+    margin-left: 5%;
+}
+
+#totalPages {
+    margin-right: 5%;
+}
+
+.pageNavigation span {
+    color: #7c7d7f;
+    text-align: center;
+    margin-top: 6%;
+    font-size: 2em !important;
+    width: 12px !important;
+}
+
+.previousItems, .nextItems {
+    width: 15%;
+    padding-top: 15%;
+}
+
+.previousItems div, .nextItems div {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+}
+
+.previousItems div {
+    border-right:10px solid #7c7d7f; 
+}
+
+.previousItems div:hover {
+    border-right-color: #404042; 
+}
+
+.nextItems div {
+    border-left: 10px solid #7c7d7f;
+}
+
+.nextItems div:hover {
+    border-left-color: #404042;
+}
