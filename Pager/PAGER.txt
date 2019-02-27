@@ -1,0 +1,13 @@
+This component Pager includes:
+
+Item container: a div to show your fetched item
+PageNavigator : previous, next, and direct navigation
+
+Behaviors:
+...
+
+Adjustables:
+count: this is the number of items you want to display in Item container
+
+
+License: None
