@@ -1,6 +1,6 @@
 author: Thong Le, javawtee@gmail.com
 
-This component Pager includes:
+This component Pager consists of:
 Item container: a div to show your fetched item
 PageNavigator : previous, next, and direct navigation
 
@@ -17,4 +17,4 @@ stylesheet import: import preset PagerStyling.css, or your desired stylings
 count: this is the number of items you want to display in Item container
 
 
-License: None
+License: Default
