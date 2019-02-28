@@ -1,8 +1,8 @@
 author: Thong Le, javawtee@gmail.com
 
-This component Pager consists of:
-Item container: a div to show your fetched item
-PageNavigator : previous, next, and direct navigation
+This component Pager consists of:<br>
+Item container: a div to show your fetched item<br>
+PageNavigator : previous, next, and direct navigation<br>
 
 Usage
 1. npm install
