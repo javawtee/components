@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import './TSlideShowStyling.css' // optional, CSS file has 2 default animations: fadeIn and fadeOut
+import './TGalleryStyling.css' // optional, CSS file has 2 default animations: fadeIn and fadeOut
 
 //const fetch = require('node-fetch');
 
-export class TSlideShow extends Component {
+export class TGallery extends Component {
     state = {
         animations: [
           'fadeIn', 'fadeOut'
@@ -16,15 +16,15 @@ export class TSlideShow extends Component {
         interval: 4000, // adjustable, interval === duration * 1000(ms)
     }
 
-    componentWillMount(){
+    componentDidMount(){
       /* 
       *	fetch imageSrc codes go here
       */
-      this.setState({nextImage: this.getNextImage(), nextAnimation: this.getNextAnimation()})
+      this.intervalId = setInterval(() => this.setState({nextImage: this.getNextImage(), nextAnimation: this.getNextAnimation()}), this.state.interval)
     }
 
-    componentDidMount(){
-      setInterval(() => this.setState({nextImage: this.getNextImage(), nextAnimation: this.getNextAnimation()}), this.state.interval)
+    componentWillMount(){
+      clearInterval(this.intervalId)
     }
 
     getNextImage = () => {
@@ -43,11 +43,11 @@ export class TSlideShow extends Component {
       return {
         animationName: this.state.nextAnimation,
         animationDuration: this.state.duration,
-        animationIterationCount: 'infinite'
+        animationIterationCount: 'infinite',
+        animationTimingFunction: 'linear',
       }
     }
   render() {
-    console.log(this.state.nextAnimation)
     return (
       <div className='SSWrapper'>
           <img className='SSImage' src={this.state.nextImage}
@@ -58,4 +58,4 @@ export class TSlideShow extends Component {
   }
 }
 
-export default TSlideShow
+export default TGallery

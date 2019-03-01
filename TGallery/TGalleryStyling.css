@@ -1,0 +1,23 @@
+.SSWrapper {
+    background: black;
+    width: 100%;
+    height: 250px;
+    text-align: center; 
+    padding: 25px;
+}
+
+.SSImage {
+    width: 170px;
+    height: 200px !important;
+}
+
+/* define animations for images from HERE*/
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 0.75}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 0.75}
+    100% {opacity: 0}
+}
